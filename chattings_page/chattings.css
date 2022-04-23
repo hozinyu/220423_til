@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.ChattingBox {
+    width: 220px; height: 325px;
+    background-color: #C5BCFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header img {
+    width: 38px; height: 38px;
+    border-radius: 100%;
+}
+header>h1 {
+    font-size: 12px;
+    padding: 10px;}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(-20px);
+}
+
+.Profile-user {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 0.2px solid black;
+}
+.user__name { font-size: 12px;
+}
+
+.user__message { font-size: 6px;}
+
+.badge-and-grade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.badge-and-grade div {
+    font-size: 4px;
+    background-color: white;
+    border-radius: 2px;
+    width: 31px; height: 15px;
+    text-align: center;
+}
+
+/*  main  */
+main>h1 {
+    font-size: 8px;
+    padding: 10px;
+}
+.Users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Users__main     { 
+    width: 100%;height: 23px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.Users img {
+    width: 24px; height: 24px;
+    border-radius: 100%;
+}
+
+.User__profile {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transform: translateX(-10px);
+
+}
+.User__profile>h2 {
+    font-size: 8px;
+    }
+
+.User__profile>strong {
+    font-size: 6px;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    transform: translateX(-10px);
+}
+.badges>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2px;
+    width: 10px; height: 10px;
+    margin-left: 3px;
+}
+.badges img {
+    width: 8px;
+    height: 8px;
+
+}
+
+/* footer */
+
+.nav-bar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 10px;
+    text-align: center;
+}
+.nav-bar div {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 25%;
+    height: 33px;
+    border-top: 0.2px solid black;
+    border-right: 0.2px solid black;
+}
+
+.nav-bar div:nth-child(1) {
+    background-color: #A395FF;
+    border-right: 0.2px solid black;
+}
