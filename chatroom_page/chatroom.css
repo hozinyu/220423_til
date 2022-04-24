@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Tmoney";
+    src: url('../fonts.assets/TmoneyRoundWindRegular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Baloo 2', 'Tmoney' ;
+}
+body {
+    width: 320px; height: 568px;
+}
+.chatroom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav 파트 */
+
+.nav-tap {
+    width: 100%; height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    box-shadow: 0 1px 1px rgba(0,0,0,25%);
+}
+.nav-tap p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #7E6AFB;
+}
+.nav-tap img {
+    width: 22px; height: 22px;
+}
+
+/* div 파트 */
+.chatting {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.chatting img {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.opponent {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.opponent-chat p {
+    width: fit-content;
+    height: 30px;
+    background-color: #7E6AFB;
+    color: white;
+    padding: 5px 8px 0px;
+    border-radius: 10px 10px 10px 0;
+    box-shadow: 1px 1px 4px rgba(0,0,0,25%);
+    margin-right: auto;
+    margin-top: 8px;
+
+
+}
+.user p {
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,25%);
+    margin-left: auto;
+    text-align: end;
+    margin-top: 8px;
+
+}
+#imoge img {
+    width:48px; height: 48px;
+}
+#imoge { height: 54px;
+    padding: 2px 8px;}
+
+    /* input message tap */
+
+.input-message {
+    background-color: white;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0; left: 0;
+    padding: 4px;
+}
+
+#plus-btn { width: 24px; height: 24px;}
+.input-message div {
+    width: 270px; height: 28px;
+    border: 1.5px solid #7E6AFB;
+    border-radius: 8px;
+    position: relative;
+}
+#imoge-btn { width: 20px; height: 20px;
+    position: absolute;
+    right: 4px; bottom: 2px;
+    padding: 2px;
+}
+

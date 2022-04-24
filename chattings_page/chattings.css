@@ -1,60 +1,88 @@
+@font-face {
+    font-family: "Tmoney";
+    src: url('../fonts.assets/TmoneyRoundWindRegular.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Baloo 2', 'Tmoney' ;
 }
 
+
+
 .ChattingBox {
-    width: 220px; height: 325px;
-    background-color: #C5BCFF;
+    width: 320px; height: 568px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-tap {
+    width: 100%;
+    padding: 8px;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,25%);
+}
+.top-tap p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #7E6AFB;
+}
+.top-tap img {
+    width: 30px; height: 30px;
+}
+
+header { 
+    display: flex;
+    flex-direction: column;
+    width: 300px; height: 60px;
+    margin:10px auto 60px;
 }
 header img {
-    width: 38px; height: 38px;
-    border-radius: 100%;
+    width: 50px; height: 50px;
+    border-radius: 10px;
 }
 header>h1 {
-    font-size: 12px;
-    padding: 10px;}
+    font-size: 20px;
+    color: #7E6AFB;
+}
+
+.Profile-user {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,25%);
+    border-radius: 10px;
+}
 
 .user {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    transform: translateX(-20px);
+    margin-left: 10px;
 }
 
-.Profile-user {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    border-bottom: 0.2px solid black;
-}
-.user__name { font-size: 12px;
+.user__name { font-size: 17px;
 }
 
-.user__message { font-size: 6px;}
-
-.badge-and-grade {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.badge-and-grade div {
-    font-size: 4px;
-    background-color: white;
-    border-radius: 2px;
-    width: 31px; height: 15px;
-    text-align: center;
-}
+.user__message { font-size: 14px;
+    font-weight: 400;
+    transform: translateY(-4px);}
 
 /*  main  */
+main {
+    width: 300px;
+}
 main>h1 {
-    font-size: 8px;
-    padding: 10px;
+    font-size: 17px;
+    color: #7E6AFB;
+
 }
 .Users {
     display: flex;
@@ -63,16 +91,18 @@ main>h1 {
     align-items: center;
 }
 .Users__main     { 
-    width: 100%;height: 23px;
+    width: 100%;height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-
+    box-shadow: 0 1px 1px rgba(0,0,0,25%);
+    border-radius: 10px;
 }
 .Users img {
-    width: 24px; height: 24px;
-    border-radius: 100%;
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 .User__profile {
@@ -81,15 +111,17 @@ main>h1 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    transform: translateX(-10px);
+    transform: translateX(-20px);
 
 }
 .User__profile>h2 {
-    font-size: 8px;
+    font-size: 14px;
+    font-weight: 500;
     }
 
 .User__profile>strong {
-    font-size: 6px;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .badges {
@@ -97,45 +129,46 @@ main>h1 {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    transform: translateX(-10px);
+    padding: 10px 8px 0px 4px;
 }
-.badges>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 2px;
-    width: 10px; height: 10px;
-    margin-left: 3px;
-}
-.badges img {
-    width: 8px;
-    height: 8px;
 
+.badges img {
+    width: 20px;
+    height: 20px;
 }
+#strength-icon {width: 18px; height: 18px;}
+
 
 /* footer */
 
 .nav-bar {
-
+    background-color: white;
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 320px; 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    font-size: 10px;
+    font-size: 16px;
     text-align: center;
+    letter-spacing: -0.05em;
 }
 .nav-bar div {
+    height: 50px;
     display: flex;
     justify-content: center ;
     align-items: center;
     width: 25%;
-    height: 33px;
-    border-top: 0.2px solid black;
-    border-right: 0.2px solid black;
+    border-top: 0.1px solid black;
+    border-right: 0.1px solid black;
 }
-
+.nav-bar div:nth-child(4) {
+    border-right: none;
+}
 .nav-bar div:nth-child(1) {
-    background-color: #A395FF;
-    border-right: 0.2px solid black;
+    background-color: #7E6AFB;
+    border-right: 0.1px solid black;
+    color: white;
+    font-weight: 500;
 }
