@@ -10,10 +10,12 @@
 }
 
 .video-tap {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
     width: 320px; height: 568px;
+
 }
 
 .top-tap {
@@ -23,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 4px rgba(0,0,0,25%);
+
 }
 .top-tap p {
     font-size: 16px;
@@ -33,4 +36,121 @@
     width: 30px; height: 30px;
 }
 
-.search
+
+
+/*  검색창  */
+
+.search-bar {
+    width: 302px; height: 30px; 
+    border-radius: 30px;
+    border: 0.3px solid #A7A7A7;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    justify-content: flex-start;
+    margin: 11px;
+    transform: translateY(-10px);
+}
+
+.search-bar>img { 
+    width: 17px; height: 17px;
+    margin-right:8px;
+}
+.search-bar>p {
+    color: #A7A7A7;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+/*  콘텐츠 피드 */
+
+
+.content-writer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 2px;
+}
+
+.content-writer>img {
+    width: 30px; height: 30px;
+    border-radius: 100%;
+}
+.content-writer>strong {
+    width: fit-content;
+    font-size: 13px; font-weight: 400;
+    transform: translateX(-60px);
+}
+
+#eng-name-user {
+    font-size: 14px; font-weight: 500;
+    transform: translateX(-80px);}
+
+iframe { width: 304px; height: 182px; 
+    padding: 0px 7px;}
+
+.icon-box { display: flex;
+    justify-content: flex-start; margin: 0px 9px;   }
+
+.icon-box>img { width: 20px; height: 20px; margin: 0px 2px;}
+
+.icon-box>img:last-child {
+    transform: translateX(218px);
+   
+}
+.content-feed {
+    transform: translateY(-35px);
+}
+
+.content-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 6px 0 20px 9px;
+}
+.content-else { 
+    font-size: 11px;
+    color: #A7A7A7;
+    letter-spacing: 0.01em;
+    margin: 2px 0px ;
+}
+.content-text {
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    font-size: 13px;
+}
+
+/* footer  */
+
+.nav-bar {
+    background-color: white;
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 320px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.05em;
+}
+.nav-bar div {
+    height: 50px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 25%;
+    border-top: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+.nav-bar div:nth-child(4) {
+    border-right: none;
+}
+.nav-bar div:nth-child(2) {
+    background-color: #7E6AFB;
+    border-right: 0.1px solid black;
+    color: white;
+    font-weight: 500;
+}
