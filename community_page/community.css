@@ -9,11 +9,14 @@
     font-family: 'Baloo 2', 'Tmoney' ;
 }
 body {
-    width: 320px; height: 568px;
+    width: 320px; height: 100vh;
 }
+
 .community-tap {
     position: relative;
+    background-color: #F6F6F6;
 }
+
 .top-tap {
     width: 100%;
     padding: 8px;
@@ -31,9 +34,121 @@ body {
 .top-tap img {
     width: 30px; height: 30px;
 }
+/* main css */
+
+main {
+    display: flex;
+    width: 320px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+main .title {
+    margin: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color:#7E6AFB;
+    transform: translateX(-83%);
+}
+
+.most-like {
+    width: 288px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6px 12px ;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    margin-bottom: 8px;
+}
+.icon-title {
+    display: flex;
+    align-items: center;
+}
+.icon-title img { width: 24px; height: 24px;}
+
+.icon-title strong { font-size: 16px; font-weight: 500;}
+
+.most-like-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+
+.most-like-content p {
+    font-size: 11px; font-weight: 400;
+    margin-bottom: 4px;
+}
 
 
+/* post main part */
 
+.post-main {
+    background-color: white;
+    width: 288px; 
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    padding: 6px 12px;
+}
+.writer {
+    display: flex;
+    align-items: center;
+}
+.writer img {
+    width: 30px; height: 30px;
+    margin: 7px; margin-left: 0;}
+
+.writer-name-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.writer-name-time h1 {
+    font-size: 12px; font-weight: 400;
+    transform: translateY(2px);
+}
+.writer-name-time p { font-size: 9px; color: #B9B9B9;}
+
+.post-content {font-size: 12px; margin: 10px 0;}
+
+#comentary { 
+    font-size: 12px; 
+    font-weight: 400; 
+    color: #7E6AFB; 
+    margin-bottom: 4px;
+    }
+
+.coments_name_text { 
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+}
+.coments_name_text::after {
+    content: '';
+    position: absolute;
+    width: 262px; height: 0.1px;
+    transform: translateY(17px);
+    background-color:#e0e0e0;
+}
+.coments_name_text:nth-child(4)::after {
+    display: none;
+}
+.coments_name_text h4 {
+    font-size: 10px; color: #838383;
+    font-weight: 400; 
+    margin: 7px 10px;
+}
+.coments_name_text p {
+    font-size: 10px;
+    margin: 0px 3px;}
+
+
+/*  */
 
 
 .nav-bar {
