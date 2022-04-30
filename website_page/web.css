@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Tmoney";
+    src: url('../fonts.assets/TmoneyRoundWindRegular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Baloo 2', 'Tmoney' ;
+}
+
+body {
+    width: 1024px; height: 800px;
+    padding: 16px;
+}
+
+
+/* header */
+.top_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_menu img { 
+    width: 45px; height: 45px;
+}
+
+.top_menu h1 {
+    color: #7E6AFB;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    transform: translateX(-320px);
+}
+
+.top_menu p { 
+    font-size: 15px;
+    font-weight: 400;
+    color: #A4A4A4;
+    transform: translateX(-50px);
+
+}
+
+
+
+/* main  */
+
+.main_download {
+    transform: translateX(19px);
+    width: 950px;
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,25%);
+    padding: 12px 6px;
+    margin-bottom: 30px ;
+}
+.main_download img {
+    width: 460px; height: 300px;
+}
+.main_text h2 {
+    font-family: 'Faster One', cursive;
+    line-height: 50px;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.main_download_button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+
+.main_download_button button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px; 
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    width: 195px; height: 55px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,25%);
+    margin-top: 25px;
+    margin-left: 19px;
+}
+
+.main_download_button button>img {
+    width: 24px; height: 24px;
+    margin-left: 10px;
+}
+
+
+/* footer  */
+
+.services {
+    transform: translateX(19px);
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,25%);
+    padding: 10px 6px 50px 6px;
+}
+
+.services h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0px 2px 4px rgba(0,0,0,20%);
+    margin: 22px;
+}
+
+.service-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.type-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; height: 100px;
+    border-radius: 100%;
+    border: 1px solid #7E6AFB;
+    box-shadow: 4px 4px 4px rgba(126, 106, 251,25%);
+}
+
+.service-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-type img {
+    width: 64px; height: 64px;
+}
+
+.service-type> p {
+    color: #7E6AFB;
+    font-size: 22px;
+    font-weight: 500;
+    text-shadow: 1px 2px 4px rgba(0,0,0,25%);
+    margin-top: 17px;
+}
