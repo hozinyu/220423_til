@@ -32,6 +32,10 @@ body {
     font-weight: 500;
     color: #7E6AFB;
 }
+
+.nav-tap a {
+    margin-top: 8px;
+}
 .nav-tap img {
     width: 22px; height: 22px;
 }

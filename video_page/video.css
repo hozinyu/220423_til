@@ -136,7 +136,8 @@ iframe { width: 304px; height: 182px;
     text-align: center;
     letter-spacing: -0.05em;
 }
-.nav-bar div {
+.nav-bar a {
+    text-decoration: none;
     height: 50px;
     display: flex;
     justify-content: center ;
@@ -145,10 +146,10 @@ iframe { width: 304px; height: 182px;
     border-top: 0.1px solid black;
     border-right: 0.1px solid black;
 }
-.nav-bar div:nth-child(4) {
+.nav-bar a:nth-child(4) {
     border-right: none;
 }
-.nav-bar div:nth-child(2) {
+.nav-bar a:nth-child(2) {
     background-color: #7E6AFB;
     border-right: 0.1px solid black;
     color: white;
